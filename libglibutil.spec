@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build 0
+
 %global libname libglibutil1
 
 Name:           libglibutil
