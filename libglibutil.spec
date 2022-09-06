@@ -1,6 +1,7 @@
 %define _empty_manifest_terminate_build 0
 
-%global libname libglibutil1
+%define libname %mklibname glibutil
+%define devname %mklibname -d glibutil
 
 Name:           libglibutil
 Version:        1.0.67
@@ -22,11 +23,11 @@ Summary:        Library of glib utilities
 %description -n %{libname}
 Library of glib utilities.
 
-%package devel
+%package -n %{devname}
 Summary:        Devel library for %{name}
-Requires:       %{libname} = %{version}
+Requires:	%{libname} = %{version}-%{release}
 
-%description devel
+%description -n %{devname}
 Development files for %{name}
 
 %prep
@@ -51,7 +52,7 @@ Development files for %{name}
 %doc README
 %{_libdir}/*.so.*
 
-%files devel
+%files -n %{devname}
 %{_libdir}/pkgconfig/*.pc
 %{_libdir}/%{name}.so
 %dir %{_includedir}/gutil
