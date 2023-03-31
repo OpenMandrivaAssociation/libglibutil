@@ -5,7 +5,7 @@
 
 Name:           libglibutil
 Version:        1.0.68
-Release:        1
+Release:        2
 Summary:        Library of glib utilities
 License:        BSD-3-Clause
 URL:            https://github.com/sailfishos/libglibutil
