@@ -11,6 +11,7 @@ License:        BSD-3-Clause
 URL:            https://github.com/sailfishos/libglibutil
 Source:         https://github.com/sailfishos/libglibutil/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:  make
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
 
