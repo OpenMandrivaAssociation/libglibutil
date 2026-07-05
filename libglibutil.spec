@@ -4,7 +4,7 @@
 %define devname %mklibname -d glibutil
 
 Name:           libglibutil
-Version:        1.0.81
+Version:        1.0.82
 Release:        1
 Summary:        Library of glib utilities
 License:        BSD-3-Clause
